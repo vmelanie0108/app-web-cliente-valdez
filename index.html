@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce - Productos Destacados</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mi Tienda</h1>
+            </div>
+            <ul class="navegacion-principal">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="acciones-usuario">
+                <a href="#" class="carrito">🛒 Carrito (0)</a>
+                <a href="#" class="perfil">👤 Mi Cuenta</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filtros" aria-labelledby="filtros-titulo">
+            <h2 id="filtros-titulo">Filtros</h2>
+            <form class="formulario-filtros">
+                <fieldset>
+                    <legend>Categorías</legend>
+                    <label><input type="checkbox" name="categoria" value="electronica"> Electrónica</label>
+                    <label><input type="checkbox" name="categoria" value="ropa"> Ropa</label>
+                    <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
+                    <label><input type="checkbox" name="categoria" value="deportes"> Deportes</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rango de Precio</legend>
+                    <label>
+                        Precio mínimo:
+                        <input type="number" name="precio-min" min="0" step="0.01">
+                    </label>
+                    <label>
+                        Precio máximo:
+                        <input type="number" name="precio-max" min="0" step="0.01">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Ordenar por</legend>
+                    <select name="orden">
+                        <option value="destacados">Destacados</option>
+                        <option value="precio-asc">Precio: Menor a Mayor</option>
+                        <option value="precio-desc">Precio: Mayor a Menor</option>
+                        <option value="nuevos">Más Nuevos</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="btn-aplicar">Aplicar Filtros</button>
+                <button type="reset" class="btn-limpiar">Limpiar</button>
+            </form>
+        </section>
+
+        <section class="productos-destacados" aria-labelledby="productos-titulo">
+            <h2 id="productos-titulo">Productos Destacados</h2>
+            <div class="grid-productos">
+                <article class="tarjeta-producto">
+                    <img src="placeholder.jpg" alt="Producto 1" class="imagen-producto">
+                    <div class="info-producto">
+                        <h3 class="nombre-producto">Producto Destacado 1</h3>
+                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
+                        <span class="precio-producto">$99.99</span>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="placeholder.jpg" alt="Producto 2" class="imagen-producto">
+                    <div class="info-producto">
+                        <h3 class="nombre-producto">Producto Destacado 2</h3>
+                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
+                        <span class="precio-producto">$149.99</span>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="placeholder.jpg" alt="Producto 3" class="imagen-producto">
+                    <div class="info-producto">
+                        <h3 class="nombre-producto">Producto Destacado 3</h3>
+                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
+                        <span class="precio-producto">$79.99</span>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-producto">
+                    <img src="placeholder.jpg" alt="Producto 4" class="imagen-producto">
+                    <div class="info-producto">
+                        <h3 class="nombre-producto">Producto Destacado 4</h3>
+                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
+                        <span class="precio-producto">$199.99</span>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <section class="footer-seccion">
+                <h3>Mi Tienda</h3>
+                <p>Tu tienda online de confianza con los mejores productos.</p>
+            </section>
+
+            <section class="footer-seccion">
+                <h3>Enlaces Rápidos</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Envíos y Devoluciones</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="footer-seccion">
+                <h3>Contacto</h3>
+                <address>
+                    <p>📧 email@mitienda.com</p>
+                    <p>📞 +123 456 7890</p>
+                    <p>📍 Calle Principal 123, Ciudad</p>
+                </address>
+            </section>
+
+            <section class="footer-seccion">
+                <h3>Síguenos</h3>
+                <div class="redes-sociales">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
