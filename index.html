@@ -3,153 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce - Productos Destacados</title>
+    <title>Valdez - Tienda Online</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Mi Tienda</h1>
+    <header class="header">
+        <div class="header__top-bar">
+            <div class="header__utility-container">
+                <p>Envío gratis en pedidos superiores a 50€ | Devoluciones 30 días</p>
             </div>
-            <ul class="navegacion-principal">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Contacto</a></li>
+        </div>
+
+        <div class="header__main">
+            <div class="header__logo-container">
+                <a href="/" class="header__logo">VALDEZ</a>
+            </div>
+
+            <div class="header__search-container">
+                <form class="header__search-form" role="search">
+                    <label for="search-input" class="visually-hidden">Buscar productos</label>
+                    <input type="search" id="search-input" name="q" placeholder="¿Qué buscas?" class="header__search-input">
+                    <button type="submit" class="header__search-btn">Buscar</button>
+                </form>
+            </div>
+
+            <div class="header__user-container">
+                <nav class="header__user-menu" aria-label="Menú de usuario">
+                    <ul class="header__user-list">
+                        <li><a href="/login" class="header__user-link">Iniciar sesión</a></li>
+                        <li><a href="/register" class="header__user-link">Registrarse</a></li>
+                        <li><a href="/cart" class="header__user-link" aria-label="Carrito de compras">🛒</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="header__main-nav" aria-label="Navegación principal">
+            <ul class="header__nav-list">
+                <li><a href="/mujer" class="header__nav-link">Mujer</a></li>
+                <li><a href="/hombre" class="header__nav-link">Hombre</a></li>
+                <li><a href="/ninos" class="header__nav-link">Niños</a></li>
+                <li><a href="/tendencia" class="header__nav-link">Tendencia</a></li>
+                <li><a href="/deportes" class="header__nav-link">Deportes</a></li>
             </ul>
-            <div class="acciones-usuario">
-                <a href="#" class="carrito">🛒 Carrito (0)</a>
-                <a href="#" class="perfil">👤 Mi Cuenta</a>
-            </div>
         </nav>
     </header>
 
-    <main>
-        <section class="filtros" aria-labelledby="filtros-titulo">
-            <h2 id="filtros-titulo">Filtros</h2>
-            <form class="formulario-filtros">
-                <fieldset>
-                    <legend>Categorías</legend>
-                    <label><input type="checkbox" name="categoria" value="electronica"> Electrónica</label>
-                    <label><input type="checkbox" name="categoria" value="ropa"> Ropa</label>
-                    <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
-                    <label><input type="checkbox" name="categoria" value="deportes"> Deportes</label>
-                </fieldset>
+    <nav class="categories-nav" aria-label="Categorías de productos">
+        <ul class="categories__list">
+            <li><a href="/zapatillas" class="categories__link">Zapatillas</a></li>
+            <li><a href="/ropa" class="categories__link">Ropa</a></li>
+            <li><a href="/polerones" class="categories__link">Polerones</a></li>
+            <li><a href="/chaquetas" class="categories__link">Chaquetas</a></li>
+        </ul>
+    </nav>
 
-                <fieldset>
-                    <legend>Rango de Precio</legend>
-                    <label>
-                        Precio mínimo:
-                        <input type="number" name="precio-min" min="0" step="0.01">
-                    </label>
-                    <label>
-                        Precio máximo:
-                        <input type="number" name="precio-max" min="0" step="0.01">
-                    </label>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Ordenar por</legend>
-                    <select name="orden">
-                        <option value="destacados">Destacados</option>
-                        <option value="precio-asc">Precio: Menor a Mayor</option>
-                        <option value="precio-desc">Precio: Mayor a Menor</option>
-                        <option value="nuevos">Más Nuevos</option>
-                    </select>
-                </fieldset>
-
-                <button type="submit" class="btn-aplicar">Aplicar Filtros</button>
-                <button type="reset" class="btn-limpiar">Limpiar</button>
-            </form>
+    <main class="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="visually-hidden">Bienvenido a Valdez</h1>
+            <div class="hero__content">
+                <h2>Descubre las últimas tendencias</h2>
+                <p>Moda, deporte y estilo para toda la familia</p>
+                <a href="/tendencia" class="btn btn--primary">Ver colección</a>
+            </div>
         </section>
 
-        <section class="productos-destacados" aria-labelledby="productos-titulo">
-            <h2 id="productos-titulo">Productos Destacados</h2>
-            <div class="grid-productos">
-                <article class="tarjeta-producto">
-                    <img src="placeholder.jpg" alt="Producto 1" class="imagen-producto">
-                    <div class="info-producto">
-                        <h3 class="nombre-producto">Producto Destacado 1</h3>
-                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
-                        <span class="precio-producto">$99.99</span>
-                        <button class="btn-agregar">Agregar al carrito</button>
-                    </div>
+        <section class="featured-categories" aria-labelledby="featured-title">
+            <h2 id="featured-title" class="section__title">Categorías destacadas</h2>
+            <div class="featured-categories__grid">
+                <article class="category-card">
+                    <a href="/zapatillas" class="category-card__link">
+                        <div class="category-card__image" aria-hidden="true"></div>
+                        <h3 class="category-card__title">Zapatillas</h3>
+                    </a>
                 </article>
-
-                <article class="tarjeta-producto">
-                    <img src="placeholder.jpg" alt="Producto 2" class="imagen-producto">
-                    <div class="info-producto">
-                        <h3 class="nombre-producto">Producto Destacado 2</h3>
-                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
-                        <span class="precio-producto">$149.99</span>
-                        <button class="btn-agregar">Agregar al carrito</button>
-                    </div>
+                <article class="category-card">
+                    <a href="/ropa" class="category-card__link">
+                        <div class="category-card__image" aria-hidden="true"></div>
+                        <h3 class="category-card__title">Ropa</h3>
+                    </a>
                 </article>
-
-                <article class="tarjeta-producto">
-                    <img src="placeholder.jpg" alt="Producto 3" class="imagen-producto">
-                    <div class="info-producto">
-                        <h3 class="nombre-producto">Producto Destacado 3</h3>
-                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
-                        <span class="precio-producto">$79.99</span>
-                        <button class="btn-agregar">Agregar al carrito</button>
-                    </div>
+                <article class="category-card">
+                    <a href="/polerones" class="category-card__link">
+                        <div class="category-card__image" aria-hidden="true"></div>
+                        <h3 class="category-card__title">Polerones</h3>
+                    </a>
                 </article>
-
-                <article class="tarjeta-producto">
-                    <img src="placeholder.jpg" alt="Producto 4" class="imagen-producto">
-                    <div class="info-producto">
-                        <h3 class="nombre-producto">Producto Destacado 4</h3>
-                        <p class="descripcion-producto">Descripción breve del producto destacado.</p>
-                        <span class="precio-producto">$199.99</span>
-                        <button class="btn-agregar">Agregar al carrito</button>
-                    </div>
+                <article class="category-card">
+                    <a href="/chaquetas" class="category-card__link">
+                        <div class="category-card__image" aria-hidden="true"></div>
+                        <h3 class="category-card__title">Chaquetas</h3>
+                    </a>
                 </article>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <section class="footer-seccion">
-                <h3>Mi Tienda</h3>
-                <p>Tu tienda online de confianza con los mejores productos.</p>
-            </section>
-
-            <section class="footer-seccion">
-                <h3>Enlaces Rápidos</h3>
-                <nav>
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Envíos y Devoluciones</a></li>
-                    </ul>
-                </nav>
-            </section>
-
-            <section class="footer-seccion">
-                <h3>Contacto</h3>
-                <address>
-                    <p>📧 email@mitienda.com</p>
-                    <p>📞 +123 456 7890</p>
-                    <p>📍 Calle Principal 123, Ciudad</p>
-                </address>
-            </section>
-
-            <section class="footer-seccion">
-                <h3>Síguenos</h3>
-                <div class="redes-sociales">
-                    <a href="#" aria-label="Facebook">Facebook</a>
-                    <a href="#" aria-label="Instagram">Instagram</a>
-                    <a href="#" aria-label="Twitter">Twitter</a>
-                    <a href="#" aria-label="YouTube">YouTube</a>
-                </div>
-            </section>
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__column">
+                <h3>Atención al cliente</h3>
+                <ul>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/envios">Envíos y devoluciones</a></li>
+                    <li><a href="/faq">Preguntas frecuentes</a></li>
+                    <li><a href="/tallas">Guía de tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Sobre Valdez</h3>
+                <ul>
+                    <li><a href="/nosotros">Nuestra historia</a></li>
+                    <li><a href="/sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="/tiendas">Encuentra tu tienda</a></li>
+                    <li><a href="/trabaja">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacidad">Política de privacidad</a></li>
+                    <li><a href="/terminos">Términos y condiciones</a></li>
+                    <li><a href="/cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Newsletter</h3>
+                <p>Suscríbete y recibe un 10% de descuento</p>
+                <form class="footer__newsletter" action="/newsletter" method="POST">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
         </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Valdez. Todos los derechos reservados.</p>
+            <nav class="footer__social" aria-label="Redes sociales">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+            </nav>
         </div>
     </footer>
 </body>
