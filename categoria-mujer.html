@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujer - Valdez</title>
+    <meta name="description" content="Descubre la colección de mujer: ropa, zapatillas, accesorios y deportes. Envío gratis +50€">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top-bar">
+            <div class="header__utility-container">
+                <p>Envío gratis en pedidos superiores a 50€ | Devoluciones 30 días</p>
+            </div>
+        </div>
+
+        <div class="header__main">
+            <div class="header__logo-container">
+                <a href="/" class="header__logo">VALDEZ</a>
+            </div>
+
+            <div class="header__search-container">
+                <form class="header__search-form" role="search">
+                    <label for="search-input" class="visually-hidden">Buscar productos</label>
+                    <input type="search" id="search-input" name="q" placeholder="¿Qué buscas?" class="header__search-input">
+                    <button type="submit" class="header__search-btn">Buscar</button>
+                </form>
+            </div>
+
+            <div class="header__user-container">
+                <nav class="header__user-menu" aria-label="Menú de usuario">
+                    <ul class="header__user-list">
+                        <li><a href="/login" class="header__user-link">Iniciar sesión</a></li>
+                        <li><a href="/register" class="header__user-link">Registrarse</a></li>
+                        <li><a href="/cart" class="header__user-link" aria-label="Carrito de compras">🛒</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="header__main-nav" aria-label="Navegación principal">
+            <ul class="header__nav-list">
+                <li><a href="/mujer" class="header__nav-link header__nav-link--active" aria-current="page">Mujer</a></li>
+                <li><a href="/hombre" class="header__nav-link">Hombre</a></li>
+                <li><a href="/ninos" class="header__nav-link">Niños</a></li>
+                <li><a href="/tendencia" class="header__nav-link">Tendencia</a></li>
+                <li><a href="/deportes" class="header__nav-link">Deportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="categories-nav" aria-label="Categorías de productos">
+        <ul class="categories__list">
+            <li><a href="/zapatillas" class="categories__link">Zapatillas</a></li>
+            <li><a href="/ropa" class="categories__link">Ropa</a></li>
+            <li><a href="/polerones" class="categories__link">Polerones</a></li>
+            <li><a href="/chaquetas" class="categories__link">Chaquetas</a></li>
+        </ul>
+    </nav>
+
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <ol class="breadcrumb__list">
+            <li><a href="/" class="breadcrumb__link">Inicio</a></li>
+            <li><a href="/mujer" class="breadcrumb__link">Mujer</a></li>
+            <li class="breadcrumb__current" aria-current="page">Todas las categorías</li>
+        </ol>
+    </nav>
+
+    <main class="main-content">
+        <section class="category-hero" aria-labelledby="category-title">
+            <div class="category-hero__content">
+                <h1 id="category-title" class="category-hero__title">Mujer</h1>
+                <p class="category-hero__description">Descubre nuestra colección completa para mujer: moda, calzado, accesorios y deportes</p>
+            </div>
+        </section>
+
+        <div class="category-layout">
+            <aside class="sidebar" aria-label="Filtros">
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Categorías</h2>
+                    <nav class="filter-nav" aria-label="Filtrar por categoría">
+                        <ul class="filter-nav__list">
+                            <li>
+                                <a href="/mujer/ropa" class="filter-nav__link filter-nav__link--active" aria-current="page">
+                                    <span class="filter-nav__name">Ropa</span>
+                                    <span class="filter-nav__count">(245)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/mujer/zapatillas" class="filter-nav__link">
+                                    <span class="filter-nav__name">Zapatillas</span>
+                                    <span class="filter-nav__count">(189)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/mujer/accesorios" class="filter-nav__link">
+                                    <span class="filter-nav__name">Accesorios</span>
+                                    <span class="filter-nav__count">(156)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/mujer/deportes" class="filter-nav__link">
+                                    <span class="filter-nav__name">Deportes</span>
+                                    <span class="filter-nav__count">(98)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Tallas</h2>
+                    <div class="filter-sizes">
+                        <button type="button" class="filter-size">XS</button>
+                        <button type="button" class="filter-size">S</button>
+                        <button type="button" class="filter-size">M</button>
+                        <button type="button" class="filter-size">L</button>
+                        <button type="button" class="filter-size">XL</button>
+                        <button type="button" class="filter-size">XXL</button>
+                    </div>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Color</h2>
+                    <div class="filter-colors">
+                        <button type="button" class="filter-color" style="background:#000" aria-label="Negro"></button>
+                        <button type="button" class="filter-color" style="background:#fff; border:1px solid #ddd" aria-label="Blanco"></button>
+                        <button type="button" class="filter-color" style="background:#8B4513" aria-label="Marrón"></button>
+                        <button type="button" class="filter-color" style="background:#1a3a5c" aria-label="Azul marino"></button>
+                        <button type="button" class="filter-color" style="background:#C0392B" aria-label="Rojo"></button>
+                        <button type="button" class="filter-color" style="background:#27AE60" aria-label="Verde"></button>
+                        <button type="button" class="filter-color" style="background:#F39C12" aria-label="Amarillo"></button>
+                        <button type="button" class="filter-color" style="background:#8E44AD" aria-label="Morado"></button>
+                    </div>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Precio</h2>
+                    <div class="filter-price">
+                        <div class="filter-price__inputs">
+                            <label for="price-min" class="visually-hidden">Precio mínimo</label>
+                            <input type="number" id="price-min" placeholder="Mín" class="filter-price__input">
+                            <span>€ -</span>
+                            <label for="price-max" class="visually-hidden">Precio máximo</label>
+                            <input type="number" id="price-max" placeholder="Máx" class="filter-price__input">
+                            <span>€</span>
+                        </div>
+                        <button type="button" class="btn btn--secondary filter-price__apply">Aplicar</button>
+                    </div>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Marca</h2>
+                    <ul class="filter-brands">
+                        <li><label><input type="checkbox" name="brand" value="nike"> Nike (45)</label></li>
+                        <li><label><input type="checkbox" name="brand" value="adidas"> Adidas (38)</label></li>
+                        <li><label><input type="checkbox" name="brand" value="puma"> Puma (29)</label></li>
+                        <li><label><input type="checkbox" name="brand" value="new-balance"> New Balance (22)</label></li>
+                        <li><label><input type="checkbox" name="brand" value="valdez"> Valdez (156)</label></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <div class="category-main">
+                <div class="category-toolbar">
+                    <div class="category-toolbar__results">
+                        <p>688 productos encontrados</p>
+                    </div>
+                    <div class="category-toolbar__controls">
+                        <label for="sort-select" class="visually-hidden">Ordenar por</label>
+                        <select id="sort-select" class="category-toolbar__sort">
+                            <option value="relevance">Relevancia</option>
+                            <option value="price-asc">Precio: menor a mayor</option>
+                            <option value="price-desc">Precio: mayor a menor</option>
+                            <option value="newest">Más nuevos</option>
+                            <option value="bestsellers">Más vendidos</option>
+                        </select>
+                        <div class="category-toolbar__view">
+                            <button type="button" class="view-btn view-btn--active" aria-label="Vista cuadrícula" aria-pressed="true">⊞</button>
+                            <button type="button" class="view-btn" aria-label="Vista lista" aria-pressed="false">☰</button>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="subcategories-grid" aria-labelledby="subcat-title">
+                    <h2 id="subcat-title" class="section__title">Comprar por categoría</h2>
+                    <div class="subcategories-grid__list">
+                        <article class="subcategory-card">
+                            <a href="/mujer/ropa" class="subcategory-card__link">
+                                <div class="subcategory-card__image" aria-hidden="true"></div>
+                                <div class="subcategory-card__content">
+                                    <h3 class="subcategory-card__title">Ropa</h3>
+                                    <p class="subcategory-card__count">245 productos</p>
+                                    <span class="subcategory-card__cta">Ver todo →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="subcategory-card">
+                            <a href="/mujer/zapatillas" class="subcategory-card__link">
+                                <div class="subcategory-card__image" aria-hidden="true"></div>
+                                <div class="subcategory-card__content">
+                                    <h3 class="subcategory-card__title">Zapatillas</h3>
+                                    <p class="subcategory-card__count">189 productos</p>
+                                    <span class="subcategory-card__cta">Ver todo →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="subcategory-card">
+                            <a href="/mujer/accesorios" class="subcategory-card__link">
+                                <div class="subcategory-card__image" aria-hidden="true"></div>
+                                <div class="subcategory-card__content">
+                                    <h3 class="subcategory-card__title">Accesorios</h3>
+                                    <p class="subcategory-card__count">156 productos</p>
+                                    <span class="subcategory-card__cta">Ver todo →</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="subcategory-card">
+                            <a href="/mujer/deportes" class="subcategory-card__link">
+                                <div class="subcategory-card__image" aria-hidden="true"></div>
+                                <div class="subcategory-card__content">
+                                    <h3 class="subcategory-card__title">Deportes</h3>
+                                    <p class="subcategory-card__count">98 productos</p>
+                                    <span class="subcategory-card__cta">Ver todo →</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="featured-products" aria-labelledby="featured-title">
+                    <div class="section__header">
+                        <h2 id="featured-title" class="section__title">Destacados de mujer</h2>
+                        <a href="/mujer" class="btn btn--outline">Ver toda la colección</a>
+                    </div>
+                    <div class="products-grid">
+                        <article class="product-card">
+                            <a href="/producto/1" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Ropa</p>
+                                    <h3 class="product-card__title">Vestido midi floral</h3>
+                                    <p class="product-card__brand">Valdez</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">39,99 €</span>
+                                        <span class="product-card__original">59,99 €</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                        </article>
+                        <article class="product-card">
+                            <a href="/producto/2" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Zapatillas</p>
+                                    <h3 class="product-card__title">Zapatillas running Air Max</h3>
+                                    <p class="product-card__brand">Nike</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">129,99 €</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                        </article>
+                        <article class="product-card">
+                            <a href="/producto/3" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Accesorios</p>
+                                    <h3 class="product-card__title">Bolso bandolera piel</h3>
+                                    <p class="product-card__brand">Valdez</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">79,99 €</span>
+                                        <span class="product-card__original">109,99 €</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                        </article>
+                        <article class="product-card">
+                            <a href="/producto/4" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Deportes</p>
+                                    <h3 class="product-card__title">Leggings compresión alta</h3>
+                                    <p class="product-card__brand">Adidas</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">44,99 €</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                        </article>
+                    </div>
+                </section>
+
+                <nav class="pagination" aria-label="Paginación">
+                    <button type="button" class="pagination__btn pagination__btn--prev" aria-label="Página anterior" disabled>← Anterior</button>
+                    <span class="pagination__pages">
+                        <button type="button" class="pagination__page pagination__page--active" aria-current="page">1</button>
+                        <button type="button" class="pagination__page">2</button>
+                        <button type="button" class="pagination__page">3</button>
+                        <button type="button" class="pagination__page">4</button>
+                        <span class="pagination__ellipsis">…</span>
+                        <button type="button" class="pagination__page">18</button>
+                    </span>
+                    <button type="button" class="pagination__btn pagination__btn--next" aria-label="Página siguiente">Siguiente →</button>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__column">
+                <h3>Atención al cliente</h3>
+                <ul>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/envios">Envíos y devoluciones</a></li>
+                    <li><a href="/faq">Preguntas frecuentes</a></li>
+                    <li><a href="/tallas">Guía de tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Sobre Valdez</h3>
+                <ul>
+                    <li><a href="/nosotros">Nuestra historia</a></li>
+                    <li><a href="/sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="/tiendas">Encuentra tu tienda</a></li>
+                    <li><a href="/trabaja">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacidad">Política de privacidad</a></li>
+                    <li><a href="/terminos">Términos y condiciones</a></li>
+                    <li><a href="/cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Newsletter</h3>
+                <p>Suscríbete y recibe un 10% de descuento</p>
+                <form class="footer__newsletter" action="/newsletter" method="POST">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Valdez. Todos los derechos reservados.</p>
+            <nav class="footer__social" aria-label="Redes sociales">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
