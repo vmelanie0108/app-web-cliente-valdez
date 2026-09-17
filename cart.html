@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Valdez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top-bar">
+            <div class="header__utility-container">
+                <p>Envío gratis en pedidos superiores a 50$ | Devoluciones 30 días</p>
+            </div>
+        </div>
+
+        <div class="header__main">
+            <div class="header__logo-container">
+                <a href="/" class="header__logo">VALDEZ</a>
+            </div>
+
+            <div class="header__search-container">
+                <form class="header__search-form" role="search">
+                    <label for="search-input" class="visually-hidden">Buscar productos</label>
+                    <input type="search" id="search-input" name="q" placeholder="¿Qué buscas?" class="header__search-input">
+                    <button type="submit" class="header__search-btn">Buscar</button>
+                </form>
+            </div>
+
+            <div class="header__user-container">
+                <nav class="header__user-menu" aria-label="Menú de usuario">
+                    <ul class="header__user-list">
+                        <li><a href="/login" class="header__user-link">Iniciar sesión</a></li>
+                        <li><a href="/register" class="header__user-link">Registrarse</a></li>
+                        <li><a href="/cart" class="header__user-link" aria-label="Carrito de compras">🛒</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="header__main-nav" aria-label="Navegación principal">
+            <ul class="header__nav-list">
+                <li><a href="/mujer" class="header__nav-link">Mujer</a></li>
+                <li><a href="/hombre" class="header__nav-link">Hombre</a></li>
+                <li><a href="/ninos" class="header__nav-link">Niños</a></li>
+                <li><a href="/tendencia" class="header__nav-link">Tendencia</a></li>
+                <li><a href="/deportes" class="header__nav-link">Deportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="categories-nav" aria-label="Categorías de productos">
+        <ul class="categories__list">
+            <li><a href="/zapatillas" class="categories__link">Zapatillas</a></li>
+            <li><a href="/ropa" class="categories__link">Ropa</a></li>
+            <li><a href="/polerones" class="categories__link">Polerones</a></li>
+            <li><a href="/chaquetas" class="categories__link">Chaquetas</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="cart" aria-labelledby="cart-title">
+            <div class="container">
+                <header class="cart__header">
+                    <h1 id="cart-title" class="cart__title">Carrito de Compras</h1>
+                    <p class="cart__subtitle" id="cart-count">0 productos</p>
+                </header>
+
+                <div class="cart__layout">
+                    <section class="cart__items" aria-labelledby="items-title">
+                        <h2 id="items-title" class="visually-hidden">Productos en el carrito</h2>
+
+                        <article class="cart__item" data-product-id="1">
+                            <div class="cart__item-image">
+                                <img src="img/6a7bd38221266e6051ccf3714fcdf5ab.jpg" alt="Zapatilla deportiva negra" loading="lazy">
+                            </div>
+                            <div class="cart__item-details">
+                                <h3 class="cart__item-name">Zapatilla Deportiva Pro</h3>
+                                <p class="cart__item-category">Zapatillas / Hombre</p>
+                                <div class="cart__item-attributes">
+                                    <span class="cart__item-size">Talla: 42</span>
+                                    <span class="cart__item-color">Color: Negro</span>
+                                </div>
+                                <div class="cart__item-price-row">
+                                    <span class="cart__item-price">$89.99</span>
+                                    <div class="cart__quantity">
+                                        <label for="qty-1" class="visually-hidden">Cantidad</label>
+                                        <button type="button" class="cart__qty-btn cart__qty-btn--minus" aria-label="Disminuir cantidad">−</button>
+                                        <input type="number" id="qty-1" class="cart__qty-input" value="1" min="1" max="99" aria-label="Cantidad: 1">
+                                        <button type="button" class="cart__qty-btn cart__qty-btn--plus" aria-label="Aumentar cantidad">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__item-subtotal">
+                                <span class="cart__item-subtotal-label">Subtotal</span>
+                                <span class="cart__item-subtotal-value" data-subtotal="89.99">$89.99</span>
+                            </div>
+                            <button type="button" class="cart__item-remove" aria-label="Eliminar Zapatilla Deportiva Pro del carrito">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </article>
+
+                        <article class="cart__item" data-product-id="2">
+                            <div class="cart__item-image">
+                                <img src="imgpan/Captura de pantalla 2026-09-13 225622.png" alt="Pantalón deportivo gris" loading="lazy">
+                            </div>
+                            <div class="cart__item-details">
+                                <h3 class="cart__item-name">Pantalón Deportivo Essential</h3>
+                                <p class="cart__item-category">Ropa / Hombre</p>
+                                <div class="cart__item-attributes">
+                                    <span class="cart__item-size">Talla: L</span>
+                                    <span class="cart__item-color">Color: Gris</span>
+                                </div>
+                                <div class="cart__item-price-row">
+                                    <span class="cart__item-price">$45.00</span>
+                                    <div class="cart__quantity">
+                                        <label for="qty-2" class="visually-hidden">Cantidad</label>
+                                        <button type="button" class="cart__qty-btn cart__qty-btn--minus" aria-label="Disminuir cantidad">−</button>
+                                        <input type="number" id="qty-2" class="cart__qty-input" value="2" min="1" max="99" aria-label="Cantidad: 2">
+                                        <button type="button" class="cart__qty-btn cart__qty-btn--plus" aria-label="Aumentar cantidad">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart__item-subtotal">
+                                <span class="cart__item-subtotal-label">Subtotal</span>
+                                <span class="cart__item-subtotal-value" data-subtotal="45.00">$90.00</span>
+                            </div>
+                            <button type="button" class="cart__item-remove" aria-label="Eliminar Pantalón Deportivo Essential del carrito">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </article>
+
+                        <div class="cart__empty-state" hidden>
+                            <svg class="cart__empty-icon" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
+                            <h3 class="cart__empty-title">Tu carrito está vacío</h3>
+                            <p class="cart__empty-text">Agrega productos para comenzar tu compra</p>
+                            <a href="/tendencia" class="btn btn--primary cart__empty-btn">Seguir comprando</a>
+                        </div>
+                    </section>
+
+                    <aside class="cart__sidebar" aria-labelledby="summary-title">
+                        <div class="cart__summary">
+                            <h2 id="summary-title" class="cart__summary-title">Resumen del pedido</h2>
+
+                            <div class="cart__summary-row">
+                                <span class="cart__summary-label">Subtotal (<span id="item-count">3</span> productos)</span>
+                                <span class="cart__summary-value" id="subtotal">$179.99</span>
+                            </div>
+
+                            <div class="cart__summary-row">
+                                <span class="cart__summary-label">Envío</span>
+                                <span class="cart__summary-value" id="shipping">Gratis</span>
+                            </div>
+
+                            <div class="cart__summary-row cart__summary-row--discount">
+                                <span class="cart__summary-label">Descuento</span>
+                                <span class="cart__summary-value" id="discount">-$0.00</span>
+                            </div>
+
+                            <hr class="cart__divider">
+
+                            <div class="cart__summary-row cart__summary-row--total">
+                                <span class="cart__summary-label">Total</span>
+                                <span class="cart__summary-value" id="total">$179.99</span>
+                            </div>
+
+                            <p class="cart__shipping-notice">Envío gratis en pedidos superiores a $50</p>
+
+                            <div class="cart__promo">
+                                <label for="promo-code" class="visually-hidden">Código promocional</label>
+                                <div class="cart__promo-input-group">
+                                    <input type="text" id="promo-code" class="cart__promo-input" placeholder="Código promocional" aria-describedby="promo-help">
+                                    <button type="button" class="btn btn--secondary cart__promo-btn">Aplicar</button>
+                                </div>
+                                <p id="promo-help" class="cart__promo-help">Los códigos se aplican antes del pago</p>
+                            </div>
+                        </div>
+
+                        <section class="cart__payment" aria-labelledby="payment-title">
+                            <h3 id="payment-title" class="cart__section-title">Método de pago</h3>
+
+                            <div class="cart__payment-options" role="radiogroup" aria-label="Seleccionar método de pago">
+                                <label class="cart__payment-option">
+                                    <input type="radio" name="payment-method" value="card" class="cart__payment-radio" checked>
+                                    <div class="cart__payment-card">
+                                        <div class="cart__payment-icons">
+                                            <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/flags/4x3/us.svg" alt="Visa" class="cart__payment-logo" width="40" height="24">
+                                            <img src="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/flags/4x3/eu.svg" alt="Mastercard" class="cart__payment-logo" width="40" height="24">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express" class="cart__payment-logo" width="40" height="24">
+                                        </div>
+                                        <span class="cart__payment-label">Tarjeta de crédito/débito</span>
+                                    </div>
+                                </label>
+
+                                <label class="cart__payment-option">
+                                    <input type="radio" name="payment-method" value="paypal" class="cart__payment-radio">
+                                    <div class="cart__payment-card">
+                                        <div class="cart__payment-icons">
+                                            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal" class="cart__payment-logo" width="80" height="24">
+                                        </div>
+                                        <span class="cart__payment-label">PayPal</span>
+                                    </div>
+                                </label>
+
+                                <label class="cart__payment-option">
+                                    <input type="radio" name="payment-method" value="transfer" class="cart__payment-radio">
+                                    <div class="cart__payment-card">
+                                        <div class="cart__payment-icons">
+                                            <svg class="cart__payment-logo" width="40" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <path d="M2 10h20M2 14h20M10 4v6"></path>
+                                            </svg>
+                                        </div>
+                                        <span class="cart__payment-label">Transferencia bancaria</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </section>
+
+                        <div class="cart__alerts" role="region" aria-label="Alertas e información" aria-live="polite">
+                            <div class="cart__alert cart__alert--info">
+                                <svg class="cart__alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 16v-4M12 8h.01"></path>
+                                </svg>
+                                <div class="cart__alert-content">
+                                    <strong>Envío gratis</strong> en tu pedido
+                                </div>
+                            </div>
+
+                            <div class="cart__alert cart__alert--success">
+                                <svg class="cart__alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <div class="cart__alert-content">
+                                    <strong>¡Ahorras $15.00!</strong> Descuento automático aplicado
+                                </div>
+                            </div>
+
+                            <div class="cart__alert cart__alert--warning">
+                                <svg class="cart__alert-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                <div class="cart__alert-content">
+                                    <strong>Stock limitado</strong> Quedan 3 unidades de "Zapatilla Deportiva Pro"
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart__actions">
+                            <a href="/tendencia" class="btn btn--secondary btn--full cart__continue-btn">Seguir comprando</a>
+                            <button type="button" class="btn btn--primary btn--full cart__checkout-btn" disabled>
+                                <span class="cart__checkout-text">Proceder al pago</span>
+                                <span class="cart__checkout-total" id="checkout-total">$179.99</span>
+                            </button>
+                        </div>
+
+                        <p class="cart__secure">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <span>Pago 100% seguro - Certificado SSL</span>
+                        </p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__column">
+                <h3>Atención al cliente</h3>
+                <ul>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/envios">Envíos y devoluciones</a></li>
+                    <li><a href="/faq">Preguntas frecuentes</a></li>
+                    <li><a href="/tallas">Guía de tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Sobre Valdez</h3>
+                <ul>
+                    <li><a href="/nosotros">Nuestra historia</a></li>
+                    <li><a href="/sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="/tiendas">Encuentra tu tienda</a></li>
+                    <li><a href="/trabaja">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacidad">Política de privacidad</a></li>
+                    <li><a href="/terminos">Términos y condiciones</a></li>
+                    <li><a href="/cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Newsletter</h3>
+                <p>Suscríbete y recibe un 10% de descuento</p>
+                <form class="footer__newsletter" action="/newsletter" method="POST">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Valdez. Todos los derechos reservados.</p>
+            <nav class="footer__social" aria-label="Redes sociales">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
