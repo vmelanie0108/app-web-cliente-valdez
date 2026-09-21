@@ -960,6 +960,32 @@ input {
     color: var(--color-white);
 }
 
+.product-card__add-cart {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: inherit;
+    width: calc(100% - 2 * var(--spacing-sm));
+    margin: 0 var(--spacing-sm) var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--color-primary, #1a1a1a);
+    color: var(--color-white);
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: var(--border-radius, 4px);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+.product-card__add-cart:hover {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+
+
 @media (max-width: 1024px) {
     .products-grid {
         grid-template-columns: repeat(3, 1fr);
