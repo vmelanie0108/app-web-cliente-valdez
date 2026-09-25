@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Valdez</title>
+    <meta name="description" content="Crea tu cuenta de Valdez y disfruta de envío gratis, ofertas exclusivas y seguimiento de pedidos">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <script src="header.js"></script>
+
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <ol class="breadcrumb__list">
+            <li><a href="index.html" class="breadcrumb__link">Inicio</a></li>
+            <li class="breadcrumb__current" aria-current="page">Registrarse</li>
+        </ol>
+    </nav>
+
+    <main class="main-content">
+        <section class="category-hero" aria-labelledby="register-title">
+            <div class="category-hero__content">
+                <h1 id="register-title" class="category-hero__title">Crear cuenta</h1>
+                <p class="category-hero__description">Regístrate y disfruta de ofertas exclusivas, favoritos y seguimiento de tus pedidos</p>
+            </div>
+        </section>
+
+        <section class="filter-section" aria-labelledby="register-form-title" style="max-width: 420px; margin: 0 auto 3rem;">
+            <h2 id="register-form-title" class="filter-section__title">Datos de registro</h2>
+
+            <form class="filter-price" action="login.html" method="POST">
+                <div class="filter-price__inputs" style="flex-direction: column; align-items: stretch; gap: 0.75rem;">
+                    <div>
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" class="filter-price__input" required autocomplete="name" style="width: 100%;">
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" class="filter-price__input" required autocomplete="email" style="width: 100%;">
+                    </div>
+                    <div>
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="Mínimo 6 caracteres" class="filter-price__input" required autocomplete="new-password" minlength="6" style="width: 100%;">
+                    </div>
+                    <div>
+                        <label for="password-confirm">Confirmar contraseña</label>
+                        <input type="password" id="password-confirm" name="password-confirm" placeholder="Repite tu contraseña" class="filter-price__input" required autocomplete="new-password" minlength="6" style="width: 100%;">
+                    </div>
+                    <label class="filter-brand-card" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="terminos" value="1" required>
+                        <span class="filter-brand-card__name">Acepto los <a href="#" class="breadcrumb__link">términos y condiciones</a></span>
+                    </label>
+                    <label class="filter-brand-card" style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="newsletter" value="1">
+                        <span class="filter-brand-card__name">Quiero recibir ofertas y novedades por email</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn--secondary filter-price__apply" style="width: 100%; margin-top: 1rem;">Crear cuenta</button>
+            </form>
+
+            <p style="margin-top: 1rem; text-align: center;">¿Ya tienes cuenta? <a href="login.html" class="breadcrumb__link">Inicia sesión</a></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__column">
+                <h3>Atención al cliente</h3>
+                <ul>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/envios">Envíos y devoluciones</a></li>
+                    <li><a href="/faq">Preguntas frecuentes</a></li>
+                    <li><a href="/tallas">Guía de tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Sobre Valdez</h3>
+                <ul>
+                    <li><a href="/nosotros">Nuestra historia</a></li>
+                    <li><a href="/sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="/tiendas">Encuentra tu tienda</a></li>
+                    <li><a href="/trabaja">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacidad">Política de privacidad</a></li>
+                    <li><a href="/terminos">Términos y condiciones</a></li>
+                    <li><a href="/cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Newsletter</h3>
+                <p>Suscríbete y recibe un 10% de descuento</p>
+                <form class="footer__newsletter" action="/newsletter" method="POST">
+                    <label for="newsletter-email" class="visually-hidden">Email</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Valdez. Todos los derechos reservados.</p>
+            <nav class="footer__social" aria-label="Redes sociales">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

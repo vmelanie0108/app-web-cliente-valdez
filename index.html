@@ -7,56 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header__top-bar">
-            <div class="header__utility-container">
-                <p>Envío gratis en pedidos superiores a 50$ | Devoluciones 30 días</p>
-            </div>
-        </div>
-
-        <div class="header__main">
-            <div class="header__logo-container">
-                <a href="/" class="header__logo">VALDEZ</a>
-            </div>
-
-            <div class="header__search-container">
-                <form class="header__search-form" role="search">
-                    <label for="search-input" class="visually-hidden">Buscar productos</label>
-                    <input type="search" id="search-input" name="q" placeholder="¿Qué buscas?" class="header__search-input">
-                    <button type="submit" class="header__search-btn">Buscar</button>
-                </form>
-            </div>
-
-            <div class="header__user-container">
-                <nav class="header__user-menu" aria-label="Menú de usuario">
-                    <ul class="header__user-list">
-                        <li><a href="/login" class="header__user-link">Iniciar sesión</a></li>
-                        <li><a href="/register" class="header__user-link">Registrarse</a></li>
-                        <li><a href="file:///C:/app-web-cliente-valdez/cart.html" class="header__user-link" aria-label="Carrito de compras">🛒</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
-        <nav class="header__main-nav" aria-label="Navegación principal">
-            <ul class="header__nav-list">
-                <li><a href="file:///C:/app-web-cliente-valdez/categoria-mujer.html" class="header__nav-link">Mujer</a></li>
-                <li><a href="file:///C:/app-web-cliente-valdez/categoria-hombre.html" class="header__nav-link">Hombre</a></li>
-                <li><a href="file:///C:/app-web-cliente-valdez/categoria-ninos.html" class="header__nav-link">Niños</a></li>
-                <li><a href="file:///C:/app-web-cliente-valdez/categoria-ninos.html" class="header__nav-link">Tendencia</a></li>
-                <li><a href="file:///C:/app-web-cliente-valdez/categoria-deportes.html" class="header__nav-link">Deportes</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <nav class="categories-nav" aria-label="Categorías de productos">
-        <ul class="categories__list">
-            <li><a href="/zapatillas" class="categories__link">Zapatillas</a></li>
-            <li><a href="/ropa" class="categories__link">Ropa</a></li>
-            <li><a href="/polerones" class="categories__link">Polerones</a></li>
-            <li><a href="/chaquetas" class="categories__link">Chaquetas</a></li>
-        </ul>
-    </nav>
+    <div id="site-header"></div>
+    <script src="header.js"></script>
 
     <main class="main-content">
         <section class="hero" aria-labelledby="hero-title">
@@ -64,7 +16,7 @@
             <div class="hero__content">
                 <h2>Descubre las últimas tendencias</h2>
                 <p>Moda, deporte y estilo para toda la familia</p>
-                <a href="/tendencia" class="btn btn--primary">Ver colección</a>
+                <a href="categoria-deportes.html" class="btn btn--primary">Ver colección</a>
             </div>
         </section>
 
