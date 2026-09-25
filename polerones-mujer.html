@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polerones Mujer - Valdez</title>
+    <meta name="description" content="Descubre la colección de polerones para mujer: oversize, con capucha, cuello alto y más. Envío gratis +50$">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <script src="header.js"></script>
+
+    <main class="main-content">
+        <section class="category-hero" aria-labelledby="category-title">
+            <div class="category-hero__content">
+                <h1 id="category-title" class="category-hero__title">Polerones Mujer</h1>
+                <p class="category-hero__description">Encuentra el polerón perfecto: oversize, con capucha y estilos para cada ocasión</p>
+            </div>
+        </section>
+
+        <div class="category-layout">
+            <!-- Bloque 2: Barra de filtros -->
+            <aside class="sidebar" aria-label="Filtros de productos">
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Tallas</h2>
+                    <div class="filter-sizes">
+                        <button type="button" class="filter-size">XS</button>
+                        <button type="button" class="filter-size">S</button>
+                        <button type="button" class="filter-size">M</button>
+                        <button type="button" class="filter-size">L</button>
+                        <button type="button" class="filter-size">XL</button>
+                        <button type="button" class="filter-size">XXL</button>
+                    </div>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Color</h2>
+                    <div class="filter-colors">
+                        <button type="button" class="filter-color" style="background:#000" aria-label="Negro"></button>
+                        <button type="button" class="filter-color" style="background:#fff; border:1px solid #ddd" aria-label="Blanco"></button>
+                        <button type="button" class="filter-color" style="background:#c8a288" aria-label="Camel"></button>
+                        <button type="button" class="filter-color" style="background:#808080" aria-label="Gris"></button>
+                        <button type="button" class="filter-color" style="background:#e94560" aria-label="Rojo"></button>
+                        <button type="button" class="filter-color" style="background:#e598b8" aria-label="Rosa"></button>
+                        <button type="button" class="filter-color" style="background:#6b7c48" aria-label="Verde oliva"></button>
+                    </div>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Estilo</h2>
+                    <nav class="filter-nav" aria-label="Filtrar por estilo">
+                        <ul class="filter-nav__list">
+                            <li>
+                                <a href="#oversize" class="filter-nav__link">
+                                    <span class="filter-nav__name">Oversize</span>
+                                    <span class="filter-nav__count">(2)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#capucha" class="filter-nav__link">
+                                    <span class="filter-nav__name">Con capucha</span>
+                                    <span class="filter-nav__count">(2)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#basico" class="filter-nav__link">
+                                    <span class="filter-nav__name">Básico</span>
+                                    <span class="filter-nav__count">(1)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Precio</h2>
+                    <div class="filter-price">
+                        <div class="filter-price__inputs">
+                            <label for="price-min" class="visually-hidden">Precio mínimo</label>
+                            <input type="number" id="price-min" placeholder="Mín" class="filter-price__input">
+                            <span>$ -</span>
+                            <label for="price-max" class="visually-hidden">Precio máximo</label>
+                            <input type="number" id="price-max" placeholder="Máx" class="filter-price__input">
+                            <span>$</span>
+                        </div>
+                        <button type="button" class="btn btn--secondary filter-price__apply">Aplicar</button>
+                    </div>
+                </section>
+
+                <section class="filter-section">
+                    <h2 class="filter-section__title">Marca</h2>
+                    <div class="filter-brands-grid">
+                        <label class="filter-brand-card">
+                            <input type="checkbox" name="brand" value="adidas">
+                            <div class="filter-brand-card__image" style="background-image: url('imgreme/7585b09e-f648-4a2f-a386-1c4238392fc5.jpg'); background-size: cover; background-position: center;"></div>
+                            <span class="filter-brand-card__name">Adidas</span>
+                            <span class="filter-brand-card__count">(3)</span>
+                        </label>
+                        <label class="filter-brand-card">
+                            <input type="checkbox" name="brand" value="puma">
+                            <div class="filter-brand-card__image" style="background-image: url('imgreme/2e9eb707-3f7e-461d-bb23-3c7041bfb6fb.jpg'); background-size: cover; background-position: center;"></div>
+                            <span class="filter-brand-card__name">Puma</span>
+                            <span class="filter-brand-card__count">(2)</span>
+                        </label>
+                        <label class="filter-brand-card">
+                            <input type="checkbox" name="brand" value="nike">
+                            <div class="filter-brand-card__image" style="background-image: url('imgreme/eac1fd3c-616a-4d0a-94b7-34f3b952e3ef.jpg'); background-size: cover; background-position: center;"></div>
+                            <span class="filter-brand-card__name">Nike</span>
+                            <span class="filter-brand-card__count">(2)</span>
+                        </label>
+                        <label class="filter-brand-card">
+                            <input type="checkbox" name="brand" value="valdez">
+                            <div class="filter-brand-card__image" style="background-image: url('imgreme/afed59d3-26c9-4390-8ca0-d5387955037d.jpg'); background-size: cover; background-position: center;"></div>
+                            <span class="filter-brand-card__name">Valdez</span>
+                            <span class="filter-brand-card__count">(1)</span>
+                        </label>
+                    </div>
+                </section>
+            </aside>
+
+            <!-- Bloque 3: Productos -->
+            <div class="category-main">
+                <div class="category-toolbar">
+                    <div class="category-toolbar__results">
+                        <p>8 productos encontrados</p>
+                    </div>
+                    <div class="category-toolbar__controls">
+                        <label for="sort-select" class="visually-hidden">Ordenar por</label>
+                        <select id="sort-select" class="category-toolbar__sort">
+                            <option value="relevance">Relevancia</option>
+                            <option value="price-asc">Precio: menor a mayor</option>
+                            <option value="price-desc">Precio: mayor a menor</option>
+                            <option value="newest">Más nuevos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Productos por Marca: Adidas -->
+                <section class="brand-section" aria-labelledby="brand-adidas">
+                    <h2 id="brand-adidas" class="brand-section__title">Adidas <span class="brand-section__count">(3)</span></h2>
+                    <div class="products-grid products-grid--4col">
+                        <article class="product-card">
+                            <a href="/producto/101" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/7585b09e-f648-4a2f-a386-1c4238392fc5.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Oversize Essentials</h3>
+                                    <p class="product-card__brand">Adidas</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$49.99</span>
+                                        <span class="product-card__original">$69.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="/producto/102" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/7585b09e-f648-4a2f-a386-1c4238392fc5.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Con Capucha Trefoil</h3>
+                                    <p class="product-card__brand">Adidas</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$54.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="/producto/103" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/7585b09e-f648-4a2f-a386-1c4238392fc5.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Básico Cuello Redondo</h3>
+                                    <p class="product-card__brand">Adidas</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$39.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Productos por Marca: Puma -->
+                <section class="brand-section" aria-labelledby="brand-puma">
+                    <h2 id="brand-puma" class="brand-section__title">Puma <span class="brand-section__count">(2)</span></h2>
+                    <div class="products-grid products-grid--4col">
+                        <article class="product-card">
+                            <a href="/producto/201" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/2e9eb707-3f7e-461d-bb23-3c7041bfb6fb.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Oversize Classic</h3>
+                                    <p class="product-card__brand">Puma</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$44.99</span>
+                                        <span class="product-card__original">$59.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="/producto/202" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/2e9eb707-3f7e-461d-bb23-3c7041bfb6fb.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Deportivo Con Capucha</h3>
+                                    <p class="product-card__brand">Puma</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$42.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Productos por Marca: Nike -->
+                <section class="brand-section" aria-labelledby="brand-nike">
+                    <h2 id="brand-nike" class="brand-section__title">Nike <span class="brand-section__count">(2)</span></h2>
+                    <div class="products-grid products-grid--4col">
+                        <article class="product-card">
+                            <a href="/producto/301" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/eac1fd3c-616a-4d0a-94b7-34f3b952e3ef.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Oversize Sportswear</h3>
+                                    <p class="product-card__brand">Nike</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$64.99</span>
+                                        <span class="product-card__original">$89.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+
+                        <article class="product-card">
+                            <a href="/producto/302" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/eac1fd3c-616a-4d0a-94b7-34f3b952e3ef.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Con Capucha Fleece</h3>
+                                    <p class="product-card__brand">Nike</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$59.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Productos por Marca: Valdez -->
+                <section class="brand-section" aria-labelledby="brand-valdez">
+                    <h2 id="brand-valdez" class="brand-section__title">Valdez <span class="brand-section__count">(1)</span></h2>
+                    <div class="products-grid products-grid--4col">
+                        <article class="product-card">
+                            <a href="/producto/401" class="product-card__link">
+                                <div class="product-card__image" aria-hidden="true" style="background-image: url('imgreme/afed59d3-26c9-4390-8ca0-d5387955037d.jpg'); background-size: cover; background-position: center;"></div>
+                                <div class="product-card__info">
+                                    <p class="product-card__category">Polerones</p>
+                                    <h3 class="product-card__title">Polerón Básico Minimal</h3>
+                                    <p class="product-card__brand">Valdez</p>
+                                    <div class="product-card__price">
+                                        <span class="product-card__current">$29.99</span>
+                                        <span class="product-card__original">$39.99</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <button type="button" class="product-card__wishlist" aria-label="Añadir a favoritos">♡</button>
+                            <a href="cart.html" class="product-card__add-cart" aria-label="Agregar al carrito">🛒 Agregar al carrito</a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__column">
+                <h3>Atención al cliente</h3>
+                <ul>
+                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="/envios">Envíos y devoluciones</a></li>
+                    <li><a href="/faq">Preguntas frecuentes</a></li>
+                    <li><a href="/tallas">Guía de tallas</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Sobre Valdez</h3>
+                <ul>
+                    <li><a href="/nosotros">Nuestra historia</a></li>
+                    <li><a href="/sostenibilidad">Sostenibilidad</a></li>
+                    <li><a href="/tiendas">Encuentra tu tienda</a></li>
+                    <li><a href="/trabaja">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/privacidad">Política de privacidad</a></li>
+                    <li><a href="/terminos">Términos y condiciones</a></li>
+                    <li><a href="/cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3>Newsletter</h3>
+                <p>Suscríbete y recibe un 10% de descuento</p>
+                <form class="footer__newsletter" action="/newsletter" method="POST">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2026 Valdez. Todos los derechos reservados.</p>
+            <nav class="footer__social" aria-label="Redes sociales">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="YouTube">▶ï¸</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
