@@ -5,3 +5,4 @@ predicciones
 4- voy a crear la pagina del carrito y agregar css e imagenes 
 5_ voy a crear las paginas de las caregorias 
 6- agregar buscador de productos 
+7- 
